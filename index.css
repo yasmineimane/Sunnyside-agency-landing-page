@@ -297,7 +297,7 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 375.98px) {
     .menu, .contact{
         flex-wrap: wrap;
         padding-left: 20px;
@@ -308,7 +308,7 @@ body {
         flex-direction: column;
         height: auto;
     }
-    
+
     .section2 {
         flex-wrap: wrap;
         justify-content: flex-end;
