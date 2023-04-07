@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root{
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*graphic design text*/
+    --Dark-blue: hsl(198, 62%, 26%); /*photography text*/
+    --Dark-moderate-cyan: hsl(168, 55%, 71%);/*footer*/
+
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(229, 5%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    font-family: "Fraunces", serif;
+    font-size: 18px;
+}
+
+.banner {
+    height: 100vh;
+    min-height: 600px;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    font-family: "Barlow", sans-serif;
+    color: var(--White);
+    align-items: center;
+}
+
+.menu span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.contact {
+    background-color: var(--White);
+    text-transform: uppercase;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.contact:hover {
+    background-color: antiquewhite;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    flex-grow: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--White);  
+}
+
+.arrow {
+    margin-top: 40px;
+}
+
+.section1, .section2 {
+    display: flex;
+    height: 550px;
+}
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text-container {
+    width: 70%;
+}
+
+.section1 .left h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.section1 .left p {
+    color: var(--Dark-grayish-blue);
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.left .link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.left div a {
+    width: 150px;
+    color: black;
+    text-decoration: none;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.section2 .left {
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.section2 .right {
+    background-image: url("./images/desktop/image-photography.jpg");
+}
+
+.section2 .left, .right {
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.section2 .text-container2 {
+    width: 90%;
+}
+
+.section2 .left h1 {
+    color: var(--Dark-desaturated-cyan);
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section2 .left p {
+    color: var(--Dark-desaturated-cyan);
+    font-family: "Barlow", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section2 .right h1 {
+    color: var(--Dark-blue);
+    font-size: 40px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.section2 .right p {
+    color: var(--Dark-blue);
+    font-family: "Barlow", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+.testimonials h1 {
+    text-transform: uppercase;
+    color: var(--Grayish-blue);
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.client-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.client-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .client {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+    align-items: center;
+}
+
+.client p {
+    text-align: center;
+    color: var(--Very-dark-grayish-blue);
+    font-family: "Barlow", sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.client .details {
+    text-align: center;
+}
+
+.details h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.details h4 {
+    font-size: 15px;
+    font-family: "Barlow", sans-serif;
+    color: var(--Grayish-blue);
+    margin-bottom: 80px;
+}
+
+.section4{
+    display: flex;
+}
+
+.section4 div {
+    flex: 0.25;
+}
+
+.section4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: var(--Dark-moderate-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.footer-nav {
+    color: #4F9485;
+    font-family: "Barlow", sans-serif;
+    margin-top: 30px;
+}
+
+.footer-nav span {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.footer-nav span:hover {
+    color: #2D7465;
+}
+
+.footer .social-media {
+    margin-top: 50px;
+}
+
+.social-media img {
+    padding: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .menu, .contact{
+        flex-wrap: wrap;
+        padding-left: 20px;
+        margin-right: 0;
+    }
+
+    .section1, .section2 {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .section2 {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .text-container2 {
+        margin-top: 300px;
+        margin-bottom: 50px;
+    }
+    
+    .section4 {
+        flex-wrap: wrap;
+    }
+
+    .section4 div {
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+}
