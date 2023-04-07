@@ -297,7 +297,7 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 375.98px) {
+@media (max-width: 575.98px) {
     .menu, .contact{
         flex-wrap: wrap;
         padding-left: 20px;
@@ -313,14 +313,17 @@ body {
         font-size: 10px;
     }
     .main {
-        font-size: 30px;
+        font-size: 35px;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .text {
         flex-wrap: wrap;
     }
 
+    .arrow {
+        margin-top: 150px;
+    }
     .section1, .section2 {
         flex-direction: column;
         height: auto;
