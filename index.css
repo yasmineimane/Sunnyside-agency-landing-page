@@ -304,6 +304,18 @@ body {
         margin-right: 0;
     }
 
+    .contact {
+        padding: 4px 10px;
+        border-radius: 15px;
+    }
+
+    .menu {
+        font-size: 10px;
+    }
+    .main {
+        font-size: 30px;
+    }
+
     .section1, .section2 {
         flex-direction: column;
         height: auto;
